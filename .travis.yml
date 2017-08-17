@@ -82,6 +82,7 @@ install:
   - cabal install -f FFI --only-dependencies --enable-tests --dry -v > installplan.txt
   - $SED -i -e '1,/^Resolving /d' installplan.txt; cat installplan.txt
   
+  
 before_script:
   - ORIGINAL_DIR=$(pwd)
   - cabal sdist
