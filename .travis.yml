@@ -103,6 +103,7 @@ install:
       cp -a $HOME/.cabal/lib $HOME/.cabal/share $HOME/.cabal/bin installplan.txt $HOME/.cabsnap/;		
     fi		
   
+  
 before_script:
   - ORIGINAL_DIR=$(pwd)
   - cabal sdist
